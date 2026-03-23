@@ -4,6 +4,8 @@
 
 Bedankt voor je interesse in de functie van Python Programmeur bij CE Delft! Deze opdracht is bedoeld om je Python- en Git-vaardigheden te testen. Je gaat een eenvoudig thermodynamisch model bouwen dat de warmtevraag van een huishouden berekent op basis van een jaarlijkse temperatuursreeks en de isolatiegraad van de woning. Vervolgens modelleer je hoe een all-electric warmtepomp deze vraag invult.
 
+Het is voor ons niet de bedoeling dat je vele uren aan deze casus besteedt, maar we hopen dat je ons weet te verrassen met een creatieve en efficiënte aanpak.
+
 ## Opdrachtomschrijving
 
 ### Doel
@@ -27,7 +29,7 @@ Schrijf een Pythonmodel dat:
 Gebruik het volgende eenvoudige thermodynamische model:
 
 - **Warmtevraag (Q, in kWh/uur)**:  
-$Q = U \; A \; (T_{setpoint} - T_{outside}) / 1000$
+$Q = U  A  (T_{setpoint} - T_{outside}) / 1000$
   - $U$: De gemiddelde warmteoverdrachtcoëfficiënt $(W/ m^2K )$. Schat een realistisch getal in op basis van literatuur.
   - $A$: Totale schiloppervlak ($m^2$) van de woning (ramen, muren, dak etc). Neem voor het gemak een oppervlak van 400 $m^2$.
   - $T_{setpoint}$: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: veriëer de set-point temperatuur voor dag en nacht.**
