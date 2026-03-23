@@ -32,7 +32,7 @@ Gebruik het volgende eenvoudige thermodynamische model:
 $Q = U  A  (T_{setpoint} - T_{outside}) / 1000$
   - $U$: De gemiddelde warmteoverdrachtcoëfficiënt $(W/ m^2K )$. Schat een realistisch getal in op basis van literatuur.
   - $A$: Totale schiloppervlak ($m^2$) van de woning (ramen, muren, dak etc). Neem voor het gemak een oppervlak van 400 $m^2$.
-  - $T_{setpoint}$: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: veriëer de set-point temperatuur voor dag en nacht.**
+  - $T_{setpoint}$: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: variëer de set-point temperatuur voor dag en nacht.**
   - $T_{outside}$: Buitentemperatuur per uur (°C)
 
   Je mag het initiëel opwarmen van de woning verwaarlozen.s
