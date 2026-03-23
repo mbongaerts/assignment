@@ -17,7 +17,10 @@ Schrijf een Pythonmodel dat:
 ### Inputs
 
 - Een CSV-bestand met een jaarlijkse temperatuursreeks (temperatuur per uur, in °C).
-- De isolatiegraad van de woning, uitgedrukt als een warmteoverdrachtcoëfficiënt (in W/K).
+- De isolatiegraad van de woning, uitgedrukt als een warmteoverdrachtcoëfficiënt.
+- Schiloppervlak van de woning.
+- Set-point temperatuur als constante temperatuur of een temperatuurreeks.
+
 
 ### Model
 
@@ -25,7 +28,7 @@ Gebruik het volgende eenvoudige thermodynamische model:
 
 - **Warmtevraag (Q, in kWh/uur)**:  
 $Q = U \; A \; (T_{setpoint} - T_{outside}) / 1000$
-  - $U$: De gemiddelde warmteoverdrachtcoëfficiënt $ \left (W/ m^2K  \right)$. Schat een realistisch getal in op basis van literatuur.
+  - $U$: De gemiddelde warmteoverdrachtcoëfficiënt $(W/ m^2K )$. Schat een realistisch getal in op basis van literatuur.
   - $A$: Totale schiloppervlak ($m^2$) van de woning (ramen, muren, dak etc). Neem voor het gemak een oppervlak van 400 $m^2$.
   - $T_{setpoint}$: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: veriëer de set-point temperatuur voor dag en nacht.**
   - $T_{outside}$: Buitentemperatuur per uur (°C)
