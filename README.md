@@ -11,7 +11,7 @@ Bedankt voor je interesse in de functie van Python Programmeur bij CE Delft! Dez
 Schrijf een Pythonmodel dat:
 
 1. De warmtevraag van een huishouden berekent op uurbasis (in kWh/uur).
-2. Het totale elektriciteitsverbruik van een all-electric warmtepomp berekent om aan deze warmtevraag te voldoen.
+2. Het totale elektriciteitsverbruik van een all-electric warmtepomp berekent om aan deze warmtevraag te voldoen. Je mag ervan uitgaan dat de warmtepomp voldoende vermogen heeft om de hoogste warmtepiekvraag op te vangen. Een extra e-boiler of gasboiler is dus niet nodig. 
 3. Een grafiek genereert met de warmtevraag (kWh/uur) en het totale verbruik van de warmtepomp (in kWh).
 
 ### Inputs
@@ -24,13 +24,16 @@ Schrijf een Pythonmodel dat:
 Gebruik het volgende eenvoudige thermodynamische model:
 
 - **Warmtevraag (Q, in kWh/uur)**:  
-`Q = U * (T_setpoint - T_outside) / 1000`
-  - `U`: Warmteoverdrachtcoëfficiënt (W/K). Schat een realistisch getal in op basis van literatuur.
-  - `T_setpoint`: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: veriëer de set-point temperatuur voor dag en nacht.**
-  - `T_outside`: Buitentemperatuur per uur (°C)
+$Q = U \; A \; (T_{setpoint} - T_{outside}) / 1000$
+  - $U$: De gemiddelde warmteoverdrachtcoëfficiënt $ \left (W/ m^2K  \right)$. Schat een realistisch getal in op basis van literatuur.
+  - $A$: Totale schiloppervlak ($m^2$) van de woning (ramen, muren, dak etc). Neem voor het gemak een oppervlak van 400 $m^2$.
+  - $T_{setpoint}$: Streeftemperatuur in de woning (bijv. 20°C). **Bonus: veriëer de set-point temperatuur voor dag en nacht.**
+  - $T_{outside}$: Buitentemperatuur per uur (°C)
+
+  Je mag het initiëel opwarmen van de woning verwaarlozen.s
 - **Warmtepompverbruik (E, in kWh)**:  
-`E = Q / COP`
-  - `COP`: Coëfficiënt of Performance van de warmtepomp. Maak deze afhankelijk van de buitentemperatuur. Zoek zelf naar literatuur voor een correcte COP-formule.
+$E = Q / COP$
+  - $COP$: Coëfficiënt of Performance van de warmtepomp. Maak deze afhankelijk van de buitentemperatuur. Zoek zelf naar literatuur voor een correcte COP-formule.
 
 ### Outputs
 
@@ -60,7 +63,7 @@ Gebruik het volgende eenvoudige thermodynamische model:
 
 1. **Fork** deze repository naar je eigen GitHub-account.
 2. **Clone** de geforkte repository naar je lokale machine.
-3. Maak een nieuwe branch aan met je naam (bijv. `voornaam-achternaam`).
+3. Maak een nieuwe branch aan met je naam (bijv. `voornaam`).
 4. Voeg je oplossing toe aan deze branch.
 5. **Commit** en **push** je wijzigingen naar je geforkte repository.
 6. Maak een **Pull Request** naar de originele repository.
