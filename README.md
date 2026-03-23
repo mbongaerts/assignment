@@ -8,7 +8,7 @@ Bedankt voor je interesse in de functie van Python Programmeur bij CE Delft! Dez
 
 ### Doel
 
-Schrijf een Python-script dat:
+Schrijf een Pythonmodel dat:
 
 1. De warmtevraag van een huishouden berekent op uurbasis (in kWh/uur).
 2. Het totale elektriciteitsverbruik van een all-electric warmtepomp berekent om aan deze warmtevraag te voldoen.
@@ -40,7 +40,7 @@ Gebruik het volgende eenvoudige thermodynamische model:
 ### Vereisten
 
 - Gebruik Python 3.11 of hoger.
-- Gebruik `pandas` voor data-verwerking en `matplotlib` of `seaborn` voor visualisatie.
+- Gebruik `pandas` voor data-verwerking en `plotly` voor visualisatie.
 - Schrijf duidelijke, goed gedocumenteerde code met type hints.
 - Voeg een `requirements.txt` toe met de benodigde packages.
 
